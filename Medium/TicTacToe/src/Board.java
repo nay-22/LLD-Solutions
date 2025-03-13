@@ -17,18 +17,11 @@ public class Board {
 
     public void set(int r, int c, Symbol symbol) throws InvalidBoardSetException {
         if (board[r][c] == ' ') {
-            board[r][c] = resolveSymbol(symbol);
+            board[r][c] = symbol.name().charAt(0);
             filledCells++;
         } else {
             throw new InvalidBoardSetException("The specified rows have already been set.");
         }
-    }
-
-    private char resolveSymbol(Symbol symbol) {
-        return switch (symbol) {
-            case O -> 'O';
-            case X -> 'X';
-        };
     }
 
     public boolean isWinner(Symbol symbol) {
@@ -39,7 +32,7 @@ public class Board {
         for (int i = 0; i < 3; i++) {
             int count = 0;
             for (int j = 0; j < 3; j++) {
-                if (board[i][j] == resolveSymbol(symbol)) {
+                if (board[i][j] == symbol.name().charAt(0)) {
                     count++;
                 }
             }
@@ -54,7 +47,7 @@ public class Board {
         for (int i = 0; i < 3; i++) {
             int count = 0;
             for (int j = 0; j < 3; j++) {
-                if (board[j][i] == resolveSymbol(symbol)) {
+                if (board[j][i] == symbol.name().charAt(0)) {
                     count++;
                 }
             }
@@ -68,13 +61,13 @@ public class Board {
     private boolean diagonalValid(Symbol symbol) {
         boolean isPositiveDiagonalValid = true, isNegativeDiagonalValid = true;
         for (int i = 0; i < 3; i++) {
-            if (board[i][i] != resolveSymbol(symbol)) {
+            if (board[i][i] != symbol.name().charAt(0)) {
                 isPositiveDiagonalValid = false;
             }
         }
 
         for (int i = 0; i < 3; i++) {
-            if (board[i][2 - i] != resolveSymbol(symbol)) {
+            if (board[i][2 - i] != symbol.name().charAt(0)) {
                 isNegativeDiagonalValid = false;
             }
         }

@@ -49,8 +49,8 @@ public class GameManager {
                     throw new InvalidAttributesException("The row and col must be valid integers between 0 and 2");
                 }
                 board.set(row, col, turn);
+                System.out.println(board);
                 if (board.isWinner(turn)) {
-                    System.out.println(board);
                     System.out.println(resolvePlayer(turn) + " WINS!!");
                     break;
                 } else if (board.isFull()) {
@@ -62,5 +62,6 @@ public class GameManager {
                 System.out.println(e);
             }
         }
+        in.close();
     }
 }

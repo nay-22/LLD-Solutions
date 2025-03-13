@@ -4,7 +4,7 @@ public class Player {
     private String name;
     private Symbol symbol;
 
-    public static Player creatPlayer() {
+    public static Player createPlayer() {
         return new Player();
     }
 
