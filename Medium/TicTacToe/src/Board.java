@@ -25,53 +25,39 @@ public class Board {
     }
 
     public boolean isWinner(Symbol symbol) {
-        return rowValid(symbol) || colValid(symbol) || diagonalValid(symbol);
+        return isAnyRowAndColValid(symbol) || isAnyDiagonalValid(symbol);
     }
 
-    private boolean rowValid(Symbol symbol) {
+    private boolean isAnyRowAndColValid(Symbol symbol) {
         for (int i = 0; i < 3; i++) {
-            int count = 0;
+            int rowCount = 0, colCount = 0;
             for (int j = 0; j < 3; j++) {
                 if (board[i][j] == symbol.name().charAt(0)) {
-                    count++;
+                    rowCount++;
                 }
-            }
-            if (count == 3) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean colValid(Symbol symbol) {
-        for (int i = 0; i < 3; i++) {
-            int count = 0;
-            for (int j = 0; j < 3; j++) {
                 if (board[j][i] == symbol.name().charAt(0)) {
-                    count++;
+                    colCount++;
                 }
             }
-            if (count == 3) {
+            if (rowCount == 3 || colCount == 3) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean diagonalValid(Symbol symbol) {
-        boolean isPositiveDiagonalValid = true, isNegativeDiagonalValid = true;
+    private boolean isAnyDiagonalValid(Symbol symbol) {
+        boolean isPositiveisAnyDiagonalValid = true, isNegativeisAnyDiagonalValid = true;
         for (int i = 0; i < 3; i++) {
             if (board[i][i] != symbol.name().charAt(0)) {
-                isPositiveDiagonalValid = false;
+                isPositiveisAnyDiagonalValid = false;
+            }
+            if (board[i][2 - i] != symbol.name().charAt(0)) {
+                isNegativeisAnyDiagonalValid = false;
             }
         }
 
-        for (int i = 0; i < 3; i++) {
-            if (board[i][2 - i] != symbol.name().charAt(0)) {
-                isNegativeDiagonalValid = false;
-            }
-        }
-        return isPositiveDiagonalValid || isNegativeDiagonalValid;
+        return isPositiveisAnyDiagonalValid || isNegativeisAnyDiagonalValid;
     }
 
     public boolean isFull() {
