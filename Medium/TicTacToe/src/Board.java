@@ -47,17 +47,17 @@ public class Board {
     }
 
     private boolean isAnyDiagonalValid(Symbol symbol) {
-        boolean isPositiveisAnyDiagonalValid = true, isNegativeisAnyDiagonalValid = true;
+        boolean isPositiveDiagonalValid = true, isNegativeDiagonalValid = true;
         for (int i = 0; i < 3; i++) {
             if (board[i][i] != symbol.name().charAt(0)) {
-                isPositiveisAnyDiagonalValid = false;
+                isPositiveDiagonalValid = false;
             }
             if (board[i][2 - i] != symbol.name().charAt(0)) {
-                isNegativeisAnyDiagonalValid = false;
+                isNegativeDiagonalValid = false;
             }
         }
 
-        return isPositiveisAnyDiagonalValid || isNegativeisAnyDiagonalValid;
+        return isPositiveDiagonalValid || isNegativeDiagonalValid;
     }
 
     public boolean isFull() {
