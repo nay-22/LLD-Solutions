@@ -10,4 +10,3 @@ public interface Topic<T> {
 
     void setState(T val);
 }
-

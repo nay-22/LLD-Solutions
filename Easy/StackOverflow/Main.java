@@ -63,7 +63,6 @@ public class Main {
 
         List<User> users = userManager.getAllUsers();
         users.forEach(System.out::println);
-
         List<Question> questionsByLuffy = questionManager.extractQuestionsByUserProfiles(List.of(users.get(0)));
         List<Question> questionsByNayan = questionManager.extractQuestionsByUserProfiles(List.of(users.get(1)));
         List<Question> questionsByZoro = questionManager.extractQuestionsByUserProfiles(List.of(users.get(2)));

@@ -1,15 +1,15 @@
 package Medium.PubSubSystem.src.managers;
 
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
-import Easy.LoggingFramework.src.domain.LoggerConfig;
-import Easy.LoggingFramework.src.domain.Sink;
-import Easy.LoggingFramework.src.logger.Logger;
 import Easy.LoggingFramework.src.logger.LoggerFactory;
 import Medium.PubSubSystem.src.domain.OrderedFileSink;
+import Easy.LoggingFramework.src.domain.LoggerConfig;
 import Medium.PubSubSystem.src.domain.interfaces.Topic;
+import Easy.LoggingFramework.src.logger.Logger;
+import Easy.LoggingFramework.src.domain.Sink;
 
 public class NotificationManager {
 
