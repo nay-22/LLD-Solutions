@@ -2,9 +2,8 @@ package src.managers;
 
 import src.domain.Action;
 import src.exceptions.ResourceNotFoundException;
-import src.managers.interfaces.VoteObserver;
 
-public class ReputationManager implements VoteObserver {
+public class ReputationManager {
     private final UserManager userManager;
     private final StrategyManager strategyManager;
 
@@ -21,7 +20,6 @@ public class ReputationManager implements VoteObserver {
         return SingletonExtractor.INSTANCE;
     }
 
-    @Override
     public boolean onVote(String email, Action action) {
         try {
             userManager.getUserByEmail(email)
