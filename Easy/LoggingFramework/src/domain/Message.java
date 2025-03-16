@@ -1,16 +1,17 @@
 package src.domain;
 
-import java.util.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class Message {
     private final String value;
     private final LogLevel level;
-    private final Date loggedAt;
+    private final Timestamp loggedAt;
 
     public Message(String value, LogLevel level) {
         this.value = value;
         this.level = level;
-        this.loggedAt = new Date();
+        this.loggedAt = Timestamp.valueOf(LocalDateTime.now());
     }
 
     public String getValue() {
@@ -21,8 +22,12 @@ public class Message {
         return level;
     }
 
-    public Date getLoggedAt() {
+    public Timestamp getLoggedAt() {
         return loggedAt;
+    }
+
+    public String getMessage() {
+        return "[" + level + "] " + value + " " + loggedAt;
     }
 
     @Override
