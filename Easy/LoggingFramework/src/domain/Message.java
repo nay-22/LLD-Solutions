@@ -4,14 +4,24 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class Message {
+    private final String meta;
     private final String value;
     private final LogLevel level;
     private final Timestamp loggedAt;
 
     public Message(String value, LogLevel level) {
+        this(value, null, level);
+    }
+
+    public Message(String value, String meta, LogLevel level) {
+        this.meta = meta;
         this.value = value;
         this.level = level;
         this.loggedAt = Timestamp.valueOf(LocalDateTime.now());
+    }
+
+    public String getMeta() {
+        return meta;
     }
 
     public String getValue() {
@@ -34,4 +44,5 @@ public class Message {
     public String toString() {
         return "Message {value=" + value + ", level=" + level + ", loggedAt=" + loggedAt + "}";
     }
+
 }

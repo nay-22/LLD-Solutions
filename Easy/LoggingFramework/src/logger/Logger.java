@@ -21,6 +21,40 @@ public class Logger {
         executorService.shutdown();
     }
 
+    private void log(String message, String meta, LogLevel level) {
+        executorService.submit(() -> {
+            try {
+                for (Sink sink : loggerConfig.getSinks()) {
+                    if (level.ordinal() >= sink.getMinLevel().ordinal()) {
+                        sink.log(new Message(message, meta, level));
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+    }
+
+    public void info(String message, String meta) {
+        log(message, meta, LogLevel.INFO);
+    }
+
+    public void debug(String message, String meta) {
+        log(message, meta, LogLevel.DEBUG);
+    }
+
+    public void warn(String message, String meta) {
+        log(message, meta, LogLevel.WARNING);
+    }
+
+    public void error(String message, String meta) {
+        log(message, meta, LogLevel.ERROR);
+    }
+
+    public void fatal(String message, String meta) {
+        log(message, meta, LogLevel.FATAL);
+    }
+
     private void log(String message, LogLevel level) {
         executorService.submit(() -> {
             try {
