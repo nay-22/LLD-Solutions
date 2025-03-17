@@ -1,0 +1,2 @@
+[DEBUG] Attempting to retrieve all topics 2025-03-17 05:52:09.0218854
+[DEBUG] Successfully retrieved all topics 2025-03-17 05:52:09.1272971

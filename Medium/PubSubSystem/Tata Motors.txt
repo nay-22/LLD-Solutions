@@ -1,0 +1,24 @@
+[INFO] Attempting to add topic: Tata Motors 2025-03-17 05:52:06.4509216
+[INFO] Successfully added topic: Tata Motors 2025-03-17 05:52:06.5593017
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:07.8091486
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:07.9164648
+[INFO] Attempting to publish value:{TATA MOTORS: 660.78} to topic: Tata Motors 2025-03-17 05:52:07.9399989
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:08.041188
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:08.1502916
+[INFO] Successfully published value:{TATA MOTORS: 660.78} to topic: Tata Motors 2025-03-17 05:52:08.1553052
+[INFO] Attempting to publish value:{TATA MOTORS: 665.73} to topic: Tata Motors 2025-03-17 05:52:08.1553052
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:08.2571338
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:08.364876
+[INFO] Attempting to publish value:{TATA MOTORS: 663.21} to topic: Tata Motors 2025-03-17 05:52:08.3658755
+[INFO] Successfully published value:{TATA MOTORS: 665.73} to topic: Tata Motors 2025-03-17 05:52:08.3658755
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:08.4746736
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:08.5833647
+[INFO] Attempting to publish value:{TATA MOTORS: 668.15} to topic: Tata Motors 2025-03-17 05:52:08.5864963
+[INFO] Successfully published value:{TATA MOTORS: 663.21} to topic: Tata Motors 2025-03-17 05:52:08.5864963
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:08.6915229
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:08.8011326
+[INFO] Successfully published value:{TATA MOTORS: 668.15} to topic: Tata Motors 2025-03-17 05:52:08.8020324
+[INFO] Attempting to publish value:{TATA MOTORS: 670.85} to topic: Tata Motors 2025-03-17 05:52:08.8020324
+[INFO] Attempting to retrieve topic: Tata Motors 2025-03-17 05:52:08.9101096
+[INFO] Successfully retrieved topic: Tata Motors 2025-03-17 05:52:09.018877
+[INFO] Successfully published value:{TATA MOTORS: 670.85} to topic: Tata Motors 2025-03-17 05:52:09.0198793

@@ -19,6 +19,8 @@ public class Main {
         testRepoTopic();
         testTataMotorsTopic();
 
+        System.out.println(notificationManager.getAllTopics());
+
         notificationManager.shutdown();
     }
 

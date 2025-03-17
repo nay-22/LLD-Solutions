@@ -14,26 +14,32 @@ public class OrderedFileSink implements Sink {
     private final Queue<Message> queue;
     private final Thread writerThread;
     private volatile boolean running = true;
-    private static final String LOG_FILE_PATH = "C:\\Users\\Nayan\\Desktop\\LLDV2\\Medium\\PubSubSystem\\logs.txt";
+    private static final String LOG_FILE_DIR = "C:\\Users\\Nayan\\Desktop\\LLDV2\\Medium\\PubSubSystem";
 
     public OrderedFileSink() {
         this.queue = new PriorityBlockingQueue<>(50,
                 (a, b) -> Long.compare(a.getLoggedAt().getTime(), b.getLoggedAt().getTime()));
 
         this.writerThread = new Thread(() -> {
-            try (FileWriter writer = new FileWriter(LOG_FILE_PATH, true)) {
-                while (running || !queue.isEmpty()) {
-                    Message message = queue.poll();
+            while (running || !queue.isEmpty()) {
+                Message message = queue.poll();
+                String path = LOG_FILE_DIR + "\\commons.txt";
+                if (message != null) {
+                    if (message.getMeta() != null) {
+                        path = LOG_FILE_DIR + "\\" + message.getMeta() + ".txt";
+                    }
+                }
+                try (FileWriter writer = new FileWriter(path, true)) {
                     if (message != null) {
                         writer.write(message.getMessage() + "\n");
                         writer.flush();
                     } else {
                         Thread.sleep(50);
                     }
+                } catch (IOException | InterruptedException e) {
+                    e.printStackTrace();
+                    Thread.currentThread().interrupt();
                 }
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-                Thread.currentThread().interrupt();
             }
         });
 
