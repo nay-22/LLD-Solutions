@@ -2,10 +2,12 @@ package Hard.Splitwise.src.domain;
 
 public class Outstanding {
     private final String expenseId;
-    private double amount;
+    private final String userEmail;
+    private final double amount;
 
-    public Outstanding(String expenseId, double amount) {
+    public Outstanding(String expenseId, String userEmail, double amount) {
         this.expenseId = expenseId;
+        this.userEmail = userEmail;
         this.amount = amount;
     }
 
@@ -13,17 +15,17 @@ public class Outstanding {
         return expenseId;
     }
 
+    public String getUserEmail() {
+        return userEmail;
+    }
+
     public double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
     @Override
     public String toString() {
-        return "Outstanding [expenseId=" + expenseId + ", amount=" + amount + "]";
+        return "Outstanding [expenseId=" + expenseId + ", userEmail=" + userEmail + ", amount=" + amount + "]";
     }
 
 }
