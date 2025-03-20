@@ -93,6 +93,26 @@ public class Logger {
         return loggerConfig;
     }
 
+    public void info(Object message) {
+        log(message.toString(), LogLevel.INFO);
+    }
+
+    public void debug(Object message) {
+        log(message.toString(), LogLevel.INFO);
+    }
+
+    public void warn(Object message) {
+        log(message.toString(), LogLevel.INFO);
+    }
+
+    public void error(Object message) {
+        log(message.toString(), LogLevel.INFO);
+    }
+
+    public void fatal(Object message) {
+        log(message.toString(), LogLevel.INFO);
+    }
+
     @Override
     public String toString() {
         return "Logger {loggerConfig=" + loggerConfig + "}";

@@ -37,7 +37,7 @@ public class Message {
     }
 
     public String getMessage() {
-        return "[" + level + "] " + value + " " + loggedAt;
+        return "[" + level + "] [" + loggedAt + "] " + value;
     }
 
     @Override
