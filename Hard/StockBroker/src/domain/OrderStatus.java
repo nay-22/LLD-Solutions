@@ -1,5 +1,5 @@
 package Hard.StockBroker.src.domain;
 
 public enum OrderStatus {
-    SUCCESS, FAIL
+    ONGOING, CANCELLED, SUCCESS, FAIL
 }

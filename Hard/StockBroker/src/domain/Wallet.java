@@ -3,12 +3,14 @@ package Hard.StockBroker.src.domain;
 public class Wallet {
     private final String id;
     private final String userId;
-    private double amount;
+    private double balance;
+    private double blockAmount;
 
     public Wallet(String id, String userId) {
         this.id = id;
         this.userId = userId;
-        this.amount = 0;
+        this.balance = 0;
+        this.blockAmount = 0;
     }
 
     public String getId() {
@@ -19,17 +21,25 @@ public class Wallet {
         return userId;
     }
 
-    public double getAmount() {
-        return amount;
+    public double getBalance() {
+        return balance;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBlockAmount() {
+        return blockAmount;
+    }
+
+    public void setBlockAmount(double blockAmount) {
+        this.blockAmount = blockAmount;
     }
 
     @Override
     public String toString() {
-        return "Wallet [id=" + id + ", userId=" + userId + ", amount=" + amount + "]";
+        return "Wallet [id=" + id + ", userId=" + userId + ", balance=" + balance + ", blockAmount=" + blockAmount + "]";
     }
 
 }

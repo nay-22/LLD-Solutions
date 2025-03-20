@@ -9,7 +9,7 @@ public class Payment {
     public Payment(String userId, String id, String name) {
         this.userId = userId;
         this.name = name;
-        this.balance = 0;
+        this.balance = 50000;
         this.id = id;
     }
 

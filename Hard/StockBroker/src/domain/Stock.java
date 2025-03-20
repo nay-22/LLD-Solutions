@@ -1,5 +1,6 @@
 package Hard.StockBroker.src.domain;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -72,6 +73,10 @@ public class Stock implements Observable<Stock> {
     public void setPrice(double price) {
         this.price = price;
         publish();
+    }
+
+    public List<Observer<Stock>> getObservers() {
+        return List.copyOf(observers);
     }
 
     @Override
