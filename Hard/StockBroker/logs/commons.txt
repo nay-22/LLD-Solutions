@@ -1,0 +1,653 @@
+[INFO] [2025-03-21 04:59:24.7084958] Nayan User Info:
+User {
+	email: nayan@gmail.com,
+	id: nay22,
+	fname: Nayan,
+	lname: null,
+	phone: null
+}
+
+[INFO] [2025-03-21 04:59:24.7972907] Wallet Blocked: 0.0
+
+[INFO] [2025-03-21 04:59:24.9064987] Wallet Balance: 10000.0
+
+[INFO] [2025-03-21 04:59:25.036519] Stocks in ExchangeManager:
+[Stock {
+	id: apple,
+	name: Apple,
+	description: null,
+	availableQty: 200,
+	price: 223.45
+}]
+
+[INFO] [2025-03-21 04:59:25.1378205] SIMULATING BUY ORDER:
+
+[INFO] [2025-03-21 04:59:25.274452] Orders (before BUY exec) created by Nayan:
+[Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $223.45,
+	orderPrice: $210.75,
+	quantity: 10
+}]
+
+[INFO] [2025-03-21 04:59:25.3877161] Wallet Blocked: 2107.5
+
+[INFO] [2025-03-21 04:59:25.4972856] Wallet Balance: 10000.0
+
+[INFO] [2025-03-21 04:59:25.6059406] Apple Stock Observers before execution:
+[Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $223.45,
+	orderPrice: $210.75,
+	quantity: 10
+}]
+
+[INFO] [2025-03-21 04:59:25.7130732] Decreasing stock price using a loop, Observer(Order) logs the side effect:
+[INFO] [2025-03-21 04:59:25.8243988] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $222.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:26.0748163] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $221.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:26.3360093] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $220.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:26.5999211] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $219.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:26.8637044] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $218.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:27.11375] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $217.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:27.3761744] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $216.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:27.6403769] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $215.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:27.902963] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $214.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:28.1655594] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $213.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:28.4303232] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $212.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:28.6954868] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $211.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:28.9615769] 
+Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: 2025-03-21T04:59:28.961576900,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: SUCCESS,
+	executedPrice: $210.45,
+	marketPrice: $210.45,
+	orderPrice: $210.75,
+	quantity: 10
+}
+
+[INFO] [2025-03-21 04:59:29.2231351] Apple Stock Observers after execution: 
+
+[INFO] [2025-03-21 04:59:29.3632106] [StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $210.45,
+	profitOrLossPerShare: $0.0,
+	current: $2104.5,
+	invested: $2104.5,
+	profitOrLoss: $0.0,
+	profitOrLossPercent: 0.00%
+}]
+
+[INFO] [2025-03-21 04:59:29.4726416] Orders (after BUY exec) created by Nayan:
+
+[INFO] [2025-03-21 04:59:29.5818469] [Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: 2025-03-21T04:59:28.961576900,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: SUCCESS,
+	executedPrice: $210.45,
+	marketPrice: $210.45,
+	orderPrice: $210.75,
+	quantity: 10
+}]
+[INFO] [2025-03-21 04:59:29.6919208] SIMULATING PORTFOLIO WATCH:
+
+[INFO] [2025-03-21 04:59:29.8040199] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $211.45,
+	profitOrLossPerShare: $1.0,
+	current: $2114.5,
+	invested: $2104.5,
+	profitOrLoss: $10.0,
+	profitOrLossPercent: 0.48%
+}
+
+[INFO] [2025-03-21 04:59:30.0677292] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $212.45,
+	profitOrLossPerShare: $2.0,
+	current: $2124.5,
+	invested: $2104.5,
+	profitOrLoss: $20.0,
+	profitOrLossPercent: 0.95%
+}
+
+[INFO] [2025-03-21 04:59:30.3319509] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $213.45,
+	profitOrLossPerShare: $3.0,
+	current: $2134.5,
+	invested: $2104.5,
+	profitOrLoss: $30.0,
+	profitOrLossPercent: 1.43%
+}
+
+[INFO] [2025-03-21 04:59:30.5828388] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $214.45,
+	profitOrLossPerShare: $4.0,
+	current: $2144.5,
+	invested: $2104.5,
+	profitOrLoss: $40.0,
+	profitOrLossPercent: 1.90%
+}
+
+[INFO] [2025-03-21 04:59:30.8478103] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $215.45,
+	profitOrLossPerShare: $5.0,
+	current: $2154.5,
+	invested: $2104.5,
+	profitOrLoss: $50.0,
+	profitOrLossPercent: 2.38%
+}
+
+[INFO] [2025-03-21 04:59:31.1131829] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $216.45,
+	profitOrLossPerShare: $6.0,
+	current: $2164.5,
+	invested: $2104.5,
+	profitOrLoss: $60.0,
+	profitOrLossPercent: 2.85%
+}
+
+[INFO] [2025-03-21 04:59:31.3767614] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $217.45,
+	profitOrLossPerShare: $7.0,
+	current: $2174.5,
+	invested: $2104.5,
+	profitOrLoss: $70.0,
+	profitOrLossPercent: 3.33%
+}
+
+[INFO] [2025-03-21 04:59:31.6422142] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $218.45,
+	profitOrLossPerShare: $8.0,
+	current: $2184.5,
+	invested: $2104.5,
+	profitOrLoss: $80.0,
+	profitOrLossPercent: 3.80%
+}
+
+[INFO] [2025-03-21 04:59:31.9074405] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $219.45,
+	profitOrLossPerShare: $9.0,
+	current: $2194.5,
+	invested: $2104.5,
+	profitOrLoss: $90.0,
+	profitOrLossPercent: 4.28%
+}
+
+[INFO] [2025-03-21 04:59:32.1607896] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $220.45,
+	profitOrLossPerShare: $10.0,
+	current: $2204.5,
+	invested: $2104.5,
+	profitOrLoss: $100.0,
+	profitOrLossPercent: 4.75%
+}
+
+[INFO] [2025-03-21 04:59:32.5235883] Wallet Blocked: 0.0
+
+[INFO] [2025-03-21 04:59:32.6342316] Wallet Balance: 7895.5
+
+[INFO] [2025-03-21 04:59:32.7438205] SIMULATING SELL ORDER:
+
+[INFO] [2025-03-21 04:59:32.8513241] Orders (before SELL exec) created by Nayan:
+
+[INFO] [2025-03-21 04:59:32.9616881] [Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $220.45,
+	orderPrice: $225.35,
+	quantity: 5
+}, Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: 2025-03-21T04:59:28.961576900,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: SUCCESS,
+	executedPrice: $210.45,
+	marketPrice: $210.45,
+	orderPrice: $210.75,
+	quantity: 10
+}]
+[INFO] [2025-03-21 04:59:33.0707329] Apple Stock Observers before execution: 
+
+[INFO] [2025-03-21 04:59:33.1815217] [Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $220.45,
+	orderPrice: $225.35,
+	quantity: 5
+}, StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $220.45,
+	profitOrLossPerShare: $10.0,
+	current: $2204.5,
+	invested: $2104.5,
+	profitOrLoss: $100.0,
+	profitOrLossPercent: 4.75%
+}]
+
+[INFO] [2025-03-21 04:59:33.2907262] Increasing stock price using a loop, Observer(Order, StockMeta) logs the side effect:
+[INFO] [2025-03-21 04:59:33.4012423] 
+Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $220.45,
+	orderPrice: $225.35,
+	quantity: 5
+}
+
+[INFO] [2025-03-21 04:59:33.4022428] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $220.45,
+	profitOrLossPerShare: $10.0,
+	current: $2204.5,
+	invested: $2104.5,
+	profitOrLoss: $100.0,
+	profitOrLossPercent: 4.75%
+}
+
+[INFO] [2025-03-21 04:59:33.6648033] 
+Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $221.45,
+	orderPrice: $225.35,
+	quantity: 5
+}
+
+[INFO] [2025-03-21 04:59:33.6658043] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $221.45,
+	profitOrLossPerShare: $11.0,
+	current: $2214.5,
+	invested: $2104.5,
+	profitOrLoss: $110.0,
+	profitOrLossPercent: 5.23%
+}
+
+[INFO] [2025-03-21 04:59:33.9274667] 
+Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: null,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: ONGOING,
+	executedPrice: $0.0,
+	marketPrice: $223.45,
+	orderPrice: $225.35,
+	quantity: 5
+}
+
+[INFO] [2025-03-21 04:59:33.9284895] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $223.45,
+	profitOrLossPerShare: $13.0,
+	current: $2234.5,
+	invested: $2104.5,
+	profitOrLoss: $130.0,
+	profitOrLossPercent: 6.18%
+}
+
+[INFO] [2025-03-21 04:59:34.1982647] 
+Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: 2025-03-21T04:59:34.197251400,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: SUCCESS,
+	executedPrice: $226.45,
+	marketPrice: $226.45,
+	orderPrice: $225.35,
+	quantity: 5
+}
+
+[INFO] [2025-03-21 04:59:34.1982647] 
+StockMeta {
+	stockId: apple,
+	quantity: 10.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $226.45,
+	profitOrLossPerShare: $16.0,
+	current: $2264.5,
+	invested: $2104.5,
+	profitOrLoss: $160.0,
+	profitOrLossPercent: 7.60%
+}
+
+[INFO] [2025-03-21 04:59:34.4577645] Apple Stock Observers after execution: 
+
+[INFO] [2025-03-21 04:59:34.5683761] [StockMeta {
+	stockId: apple,
+	quantity: 5.0,
+	averageOrderPrice: $210.45,
+	marketPrice: $226.45,
+	profitOrLossPerShare: $16.0,
+	current: $1132.25,
+	invested: $1052.25,
+	profitOrLoss: $80.0,
+	profitOrLossPercent: 7.60%
+}]
+
+[INFO] [2025-03-21 04:59:34.6759196] Orders (after SELL exec) created by Nayan:
+
+[INFO] [2025-03-21 04:59:34.7870555] [Order {
+	id: order-build-1-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:32.851324100,
+	executedAt: 2025-03-21T04:59:34.197251400,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: SELL,
+	status: SUCCESS,
+	executedPrice: $226.45,
+	marketPrice: $226.45,
+	orderPrice: $225.35,
+	quantity: 5
+}, Order {
+	id: order-build-0-nay22-apple-portfolio-nay22,
+	createdAt: 2025-03-21T04:59:25.266446900,
+	executedAt: 2025-03-21T04:59:28.961576900,
+	portfolioId: portfolio-nay22,
+	stockId: apple,
+	userId: nay22,
+	type: BUY,
+	status: SUCCESS,
+	executedPrice: $210.45,
+	marketPrice: $210.45,
+	orderPrice: $210.75,
+	quantity: 10
+}]

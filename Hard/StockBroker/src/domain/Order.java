@@ -2,6 +2,9 @@ package Hard.StockBroker.src.domain;
 
 import java.time.LocalDateTime;
 
+import Easy.LoggingFramework.src.logger.Logger;
+import Easy.LoggingFramework.src.logger.LoggerFactory;
+import Hard.StockBroker.src.config.Config;
 import Hard.StockBroker.src.domain.interfaces.Observer;
 import Hard.StockBroker.src.domain.interfaces.OrderExecutionStrategy;
 import Hard.StockBroker.src.exception.InsufficientWalletBalance;
@@ -12,6 +15,7 @@ import Hard.StockBroker.src.manager.PortfolioManager;
 import Hard.StockBroker.src.manager.StrategyManager;
 
 public class Order implements Observer<Stock> {
+    private final Logger logger;
     private final OrderExecutionStrategy executionStrategy;
     final PortfolioManager portfolioManager;
     final ExchangeManager exchangeManager;
@@ -31,6 +35,7 @@ public class Order implements Observer<Stock> {
     Order(String id, String userId, String portfolioId, String stockId, double orderPrice, double marketPrice,
             int quantity,
             OrderType type) {
+        this.logger = LoggerFactory.getInstance().getLogger(Config.loggerConfig);
         this.executionStrategy = StrategyManager.getInstance().getOrderExecutionStrategy(type);
         this.portfolioManager = PortfolioManager.getInstance();
         this.exchangeManager = ExchangeManager.getInstance();
@@ -55,7 +60,7 @@ public class Order implements Observer<Stock> {
         if (status == OrderStatus.ONGOING) {
             this.marketPrice = stock.getPrice();
             executionStrategy.execute(stock, this);
-            System.out.println(this);
+            logger.info("\n" + this + "\n");
         }
     }
 

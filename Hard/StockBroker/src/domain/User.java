@@ -74,8 +74,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User [email=" + email + ", id=" + id + ", fname=" + fname + ", lname=" + lname + ", phone=" + phone
-                + "]";
+        return "User {\n\temail: " + email
+                + ",\n\tid: " + id
+                + ",\n\tfname: " + fname
+                + ",\n\tlname: " + lname
+                + ",\n\tphone: " + phone
+                + "\n}";
     }
 
 }

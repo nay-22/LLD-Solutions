@@ -106,8 +106,12 @@ public class Stock implements Observable<Stock> {
 
     @Override
     public String toString() {
-        return "Stock [id=" + id + ", name=" + name + ", description=" + description + ", availableQty=" + availableQty
-                + ", price=" + price + "]";
+        return "Stock {\n\tid: " + id
+                + ",\n\tname: " + name
+                + ",\n\tdescription: " + description
+                + ",\n\tavailableQty: " + availableQty
+                + ",\n\tprice: " + price
+                + "\n}";
     }
 
 }
