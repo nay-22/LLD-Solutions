@@ -8,10 +8,24 @@ import java.util.Set;
 public class LoggerConfig {
     private final String identifier;
     private final Set<Sink> sinks;
+    private String meta;
 
     public LoggerConfig(String identifier, List<Sink> sinks) {
-        this.identifier = identifier;
+        this(identifier, sinks, null);
+    }
+
+    public LoggerConfig(String identifier, List<Sink> sinks, String meta) {
         this.sinks = Collections.unmodifiableSet(new HashSet<>(sinks));
+        this.identifier = identifier;
+        this.meta = meta;
+    }
+
+    public String getMeta() {
+        return meta;
+    }
+
+    public void setMeta(String meta) {
+        this.meta = meta;
     }
 
     public String getIdentifier() {

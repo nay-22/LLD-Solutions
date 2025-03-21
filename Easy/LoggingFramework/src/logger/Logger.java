@@ -60,7 +60,7 @@ public class Logger {
             try {
                 for (Sink sink : loggerConfig.getSinks()) {
                     if (level.ordinal() >= sink.getMinLevel().ordinal()) {
-                        sink.log(new Message(message, level));
+                        sink.log(new Message(message, loggerConfig.getMeta(), level));
                     }
                 }
             } catch (Exception e) {
